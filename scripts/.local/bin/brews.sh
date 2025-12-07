@@ -45,6 +45,7 @@ echo "Homebrew is ready to use!"
 echo "Installing applications and tools via Homebrew..."
 brew install \
   bash \
+  cmake \
   dockutil \
   fd \
   fzf \
