@@ -44,36 +44,25 @@ echo "Homebrew is ready to use!"
 #
 echo "Installing applications and tools via Homebrew..."
 brew install \
-  asciiquarium \
   bash \
-  cmatrix \
   dockutil \
   fd \
-  fossil \
   fzf \
   gh \
-  git \
   gnupg \
-  go \
-  htop \
-  lastpass-cli \
-  lazygit \
-  luarocks \
-  mas \
   mongosh \
-  neofetch \
+  neovim \
   nvm \
+  pass \
   ripgrep \
   s3cmd \
-  sst/tap/opencode \
   stow \
   stylua \
   tmux \
   tree \
   watchman \
   wget \
-  yazi \
-  zig
+  yazi 
 
 # Install additional tools from taps
 brew tap mongodb/brew
@@ -87,27 +76,13 @@ brew install --cask \
     brave-browser \
     claude-code \
     docker \
-    easyeda \
-    freetube \
     ghostty \
-    google-chrome \
-    logisim-evolution \
-    microsoft-office \
-    microsoft-teams \
+    localsend \
     mullvad-vpn \
     obsidian \
     postman \
-    raycast \
     the-unarchiver \
-    thonny \
-    visual-studio-code \
-    vim \
-    vlc \
-    warp \
-    whatsapp \
-    youtube-downloader \
-    zed \
-    zoom
+    vlc 
 
 # Post-install message
 echo "Installation complete. Review output for any issues."
@@ -179,8 +154,8 @@ fi
 #
 # git configs
 #
-git config --global user.name "Bengt Bengtsson"
-git config --global user.email "bengt.bengtsson@gmail.com"
+#git config --global user.name "Bengt Bengtsson"
+#git config --global user.email "bengt.bengtsson@gmail.com"
 
 git config --global alias.co checkout
 git config --global alias.br branch
@@ -196,9 +171,7 @@ git config --global --list
 dockutil --remove all --no-restart
 # Add desired applications
 echo "Adding desired applications to Dock..."
-dockutil --add "/Applications/Google Chrome.app" --no-restart
 dockutil --add "/Applications/Brave Browser.app" --no-restart
-dockutil --add "/Applications/Alacritty.app" --no-restart
 dockutil --add "/System/Applications/System Settings.app" --no-restart
 
 # Restart the Dock to apply changes
@@ -208,4 +181,3 @@ killall Dock
 echo "Dock setup complete!"
 
 # Install manually
-# Android Studio

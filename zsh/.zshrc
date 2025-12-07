@@ -1,3 +1,6 @@
+# ---- Completions ----
+autoload -Uz compinit && compinit
+
 # ---- PATH edits first ----
 PATH=$PATH:/Users/ben/Library/Android/sdk/platform-tools
 PATH="$HOME/.local/bin:$PATH"

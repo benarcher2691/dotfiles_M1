@@ -13,3 +13,6 @@ claude/.claude/shell-snapshots/
 claude/.claude/todos/
 claude/.claude/session-env/
 claude/.claude/plans/
+
+# Neovim runtime state
+scripts/.local/state/

@@ -13,4 +13,6 @@ mouse-hide-while-typing = true
 
 copy-on-select = clipboard
 keybind = shift+enter=text:\n
+# Swedish keyboard: Shift+Option+7 = backslash
+keybind = shift+alt+seven=text:\\
 
