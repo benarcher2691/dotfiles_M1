@@ -1,9 +1,14 @@
 [user]
-	name = Bengt Bengtsson
-	email = bengt.bengtsson@gmail.com
+	name = Ben Archer
+	email = ben.archer2691@gmail.com
 [alias]
 	lol = log --oneline --graph --decorate --all
 	st = status
 	ci = commit
 	co = checkout
 	br = branch
+[pull]
+	rebase = true
+[init]
+	defaultBranch = master
+

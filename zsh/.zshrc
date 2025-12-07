@@ -1,3 +1,6 @@
+# ---- Claude Code ----
+export DISABLE_AUTOUPDATER=1
+
 # ---- Completions ----
 autoload -Uz compinit && compinit
 

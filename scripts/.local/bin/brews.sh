@@ -53,6 +53,7 @@ brew install \
   mongosh \
   neovim \
   nvm \
+  pandoc \
   pass \
   ripgrep \
   s3cmd \

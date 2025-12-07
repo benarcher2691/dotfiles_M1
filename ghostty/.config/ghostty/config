@@ -15,4 +15,10 @@ copy-on-select = clipboard
 keybind = shift+enter=text:\n
 # Swedish keyboard: Shift+Option+7 = backslash
 keybind = shift+alt+seven=text:\\
+# Swedish keyboard: Option+8/9 = []
+keybind = alt+eight=text:[
+keybind = alt+nine=text:]
+# Swedish keyboard: Shift+Option+8/9 = {}
+keybind = shift+alt+eight=text:{
+keybind = shift+alt+nine=text:}
 
