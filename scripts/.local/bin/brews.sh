@@ -46,17 +46,21 @@ echo "Installing applications and tools via Homebrew..."
 brew install \
   bash \
   cmake \
+  create-dmg \
   dockutil \
   fd \
   fzf \
   gh \
   gnupg \
+  maven \
+  mit-scheme \
   mongosh \
   neovim \
   nvm \
   pandoc \
   pass \
   ripgrep \
+  rlwrap \
   s3cmd \
   stow \
   stylua \
@@ -78,13 +82,18 @@ brew install --cask \
     brave-browser \
     claude-code \
     docker \
+    font-jetbrains-mono-nerd-font \
     ghostty \
     localsend \
     mullvad-vpn \
     obsidian \
     postman \
     the-unarchiver \
+    transmission \
     vlc 
+
+brew tap sdkman/tap
+brew install sdkman-cli
 
 # Post-install message
 echo "Installation complete. Review output for any issues."
@@ -145,13 +154,30 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "/opt/homebrew/opt/nvm/etc/bash_completion" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
 '
 
-# Check if lines already exist
+# Check if NVM lines already exist
 if ! grep -qF 'export NVM_DIR="$HOME/.nvm"' ~/.zshrc; then
   echo "$NVM_SETUP" >>~/.zshrc
   echo "NVM setup added to ~/.zshrc"
 else
   echo "NVM setup already exists in ~/.zshrc"
 fi
+
+#
+# sdkman post install
+#
+SDKMAN_SETUP='
+export SDKMAN_DIR=$(brew --prefix sdkman-cli)/libexec
+[[ -s "${SDKMAN_DIR}/bin/sdkman-init.sh" ]] && source "${SDKMAN_DIR}/bin/sdkman-init.sh"
+'
+
+# Check if SDKMAN lines already exist
+if ! grep -qF 'export SDKMAN_DIR' ~/.zshrc; then
+  echo "$SDKMAN_SETUP_SETUP" >>~/.zshrc
+  echo "SDKMAN setup added to ~/.zshrc"
+else
+  echo "SDKMAN setup already exists in ~/.zshrc"
+fi
+
 
 #
 # git configs
