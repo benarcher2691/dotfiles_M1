@@ -58,7 +58,8 @@ set termguicolors             " True color support
 let mapleader = " "           " Set leader key to space
 
 " Clear search highlighting
-nnoremap <leader>h :nohlsearch<CR>
+" nnoremap <leader>h :nohlsearch<CR>
+nnoremap <Esc> :nohlsearch<CR>
 
 " Quick save and quit
 " nnoremap <leader>w :w<CR>
@@ -70,11 +71,11 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-" Move lines up/down
-nnoremap <A-j> :m .+1<CR>==
-nnoremap <A-k> :m .-2<CR>==
-vnoremap <A-j> :m '>+1<CR>gv=gv
-vnoremap <A-k> :m '<-2<CR>gv=gv
+" Move lines up/down (Option+j/k on macOS Swedish keyboard)
+nnoremap √ :m .+1<CR>==
+nnoremap ª :m .-2<CR>==
+vnoremap √ :m '>+1<CR>gv=gv
+vnoremap ª :m '<-2<CR>gv=gv
 
 " Better indentation in visual mode
 vnoremap < <gv
