@@ -66,6 +66,7 @@ brew install \
   stylua \
   tmux \
   tree \
+  vim \
   watchman \
   wget \
   yazi 
