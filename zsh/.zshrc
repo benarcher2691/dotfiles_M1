@@ -5,6 +5,7 @@ export DISABLE_AUTOUPDATER=1
 autoload -Uz compinit && compinit
 
 # ---- PATH edits first ----
+PATH="/opt/homebrew/bin:$PATH"
 PATH=$PATH:/Users/ben/Library/Android/sdk/platform-tools
 PATH="$HOME/.local/bin:$PATH"
 PATH="/opt/homebrew/opt/make/libexec/gnubin:$PATH"

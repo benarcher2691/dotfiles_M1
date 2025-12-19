@@ -33,7 +33,7 @@ set wrap                      " Wrap long lines
 set linebreak                 " Break lines at word boundaries
 set showbreak=↪\              " Show line breaks
 set list                      " Show invisible characters
-set listchars=tab:→\ ,trail:·,extends:>,precedes:<,nbsp:+
+set listchars=tab:→\ ,trail:·,extends:>,precedes:<,nbsp:+,eol:$
 
 " Files and backups
 set autoread                  " Auto-reload changed files
