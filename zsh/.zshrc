@@ -17,8 +17,12 @@ export PATH
 setopt prompt_subst
 
 git_branch() {
-      ref=$(git symbolic-ref --quiet --short HEAD 2>/dev/null || git rev-parse --short HEAD 2>/dev/null)
-        [[ -n "$ref" ]] && echo "($ref)"
+    ref=$(git symbolic-ref --quiet --short HEAD 2>/dev/null || git rev-parse --short HEAD 2>/dev/null)
+    if [[ -n "$ref" ]]; then
+        dirty=""
+        [[ -n $(git status --porcelain 2>/dev/null) ]] && dirty="*"
+        echo "($ref$dirty)"
+    fi
 }
 
 PS1='$ %~ $(git_branch) '
