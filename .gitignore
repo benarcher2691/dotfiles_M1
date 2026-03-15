@@ -16,3 +16,6 @@ claude/.claude/plans/
 
 # Neovim runtime state
 scripts/.local/state/
+
+# OpenCode runtime data
+scripts/.local/share/opencode/
